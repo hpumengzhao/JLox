@@ -1,0 +1,19 @@
+class Demo {
+    init(a, b, c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+    cook() {
+        print "Fry until golden brown.";
+    }
+}
+class Sub < Demo{
+    init(a, b, c) {
+        super.init(a,b,c);
+    }
+}
+var subclass = Sub(1,2,3);
+print subclass.a;
+print subclass.b;
+print subclass.c;

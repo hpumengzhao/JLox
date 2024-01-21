@@ -1,0 +1,23 @@
+class Bacon {
+    eat() {
+        print "Crunch crunch crunch!";
+        print this;
+    }
+}
+
+var NotAClass = "I am totally not a class";
+class Subclass < NotAClass {}
+
+class Foo {
+    init() {
+        return ;
+    }
+}
+
+fun eat() {
+    print "another";
+}
+
+
+var bacon = Bacon();
+bacon.eat();
